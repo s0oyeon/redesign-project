@@ -5,16 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>리디자인 프로젝트</title>
 
-    <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
-    <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
     <link rel="stylesheet" href="css/style.css" />
-
     <script src="js/script.js" defer></script>
   </head>
 
@@ -40,13 +37,34 @@
         </div>
       </header>
 
-      <section class="hero">
-        <div class="inner">
-          <div class="hero-text">
+      <section class="slogan-slider">
+        <div class="slogan-slide active">
+          <img src="./assets/images/dog-main.jpg" alt="" class="slogan-bg" />
+          <div class="slogan-text">
             <h2>버려진 생명이 아닌, 기다리고 있는 가족입니다</h2>
             <p>
               매달 약정된 금액을 후원하여 협회의 전반적인 활동과 운영을
               지지해주실 수 있습니다
+            </p>
+          </div>
+        </div>
+
+        <div class="slogan-slide">
+          <img src="./assets/images/cat-main.jpg" alt="" class="slogan-bg" />
+          <div class="slogan-text">
+            <h2>기부업체</h2>
+            <p>현대 홈쇼핑 / 현대백화점 / 기업은행 / 돌고(사료 후원 플랫폼)</p>
+          </div>
+        </div>
+
+        <div class="slogan-slide">
+          <img src="./assets/images/dog-main2.jpg" alt="" class="slogan-bg" />
+          <div class="slogan-text">
+            <h2>MOU업체</h2>
+            <p>
+              서울종합예술실용학교, DB손해보험, 주식회사 푸르데이, 킨드리핏,
+              데일리경제, 건국대학교, 한국펫산업순환협회, 파주경찰서, 법무법인
+              청음, 경동대학교
             </p>
           </div>
         </div>
@@ -92,7 +110,6 @@
           </div>
 
           <div class="animal-list">
-            <!-- 카드 -->
             <div class="animal-card">
               <img src="assets/images/dog1.jpg" alt="" />
               <div class="animal-info">
@@ -102,7 +119,7 @@
             </div>
 
             <div class="animal-card">
-              <img src="assets/images/dog2.jpg " alt="" />
+              <img src="assets/images/dog2.jpg" alt="" />
               <div class="animal-info">
                 <span>말티즈</span>
                 <strong>복돌이</strong>
@@ -110,7 +127,7 @@
             </div>
 
             <div class="animal-card">
-              <img src="assets/images/dog3.jpg " alt="" />
+              <img src="assets/images/dog3.jpg" alt="" />
               <div class="animal-info">
                 <span>프렌치불독</span>
                 <strong>호떡이</strong>
@@ -118,7 +135,7 @@
             </div>
 
             <div class="animal-card">
-              <img src="assets/images/dog4.jpg " alt="" />
+              <img src="assets/images/dog4.jpg" alt="" />
               <div class="animal-info">
                 <span>푸들</span>
                 <strong>콩이</strong>
@@ -126,14 +143,15 @@
             </div>
 
             <div class="animal-card">
-              <img src="assets/images/dog5.jpg " alt="" />
+              <img src="assets/images/dog5.jpg" alt="" />
               <div class="animal-info">
                 <span>폼피츠</span>
                 <strong>빵이</strong>
               </div>
             </div>
+
             <div class="animal-card">
-              <img src="assets/images/cat1.jpg " alt="" />
+              <img src="assets/images/cat1.jpg" alt="" />
               <div class="animal-info">
                 <span>스코티쉬스트레이트</span>
                 <strong>반달이</strong>
@@ -141,7 +159,7 @@
             </div>
 
             <div class="animal-card">
-              <img src="assets/images/dog6.jpg " alt="" />
+              <img src="assets/images/dog6.jpg" alt="" />
               <div class="animal-info">
                 <span>푸들</span>
                 <strong>지구</strong>
@@ -149,7 +167,7 @@
             </div>
 
             <div class="animal-card">
-              <img src="assets/images/cat2.jpg " alt="" />
+              <img src="assets/images/cat2.jpg" alt="" />
               <div class="animal-info">
                 <span>코리안숏헤어</span>
                 <strong>피자</strong>
@@ -163,47 +181,99 @@
         </div>
       </section>
 
-      <section class="story">
-        <div class="story-inner">
-          <div class="story-title">
-            <h2>입양 이야기</h2>
-            <p>사랑을 기다리는 아이들에게 또 하나의 기적이 이어지길 바랍니다</p>
-          </div>
+      <section class="story-section">
+        <div class="story-header">
+          <h2>입양 이야기</h2>
+          <p>사랑을 기다리는 아이들에게 또 하나의 기적이 이어지길 바랍니다</p>
+        </div>
 
-          <div class="story-content">
-            <div class="story-image">
-              <img src="./assets/images/dog7.jpg" alt="" />
+        <div class="story-slider">
+          <div class="story-slide active">
+            <div class="story-img-wrap">
+              <img
+                src="./assets/images/story1.jpg"
+                alt="럭키 입양 이야기"
+                class="story-img"
+              />
             </div>
 
             <div class="story-text">
-              <h3>"장애를 넘어, 가족을 만나다"</h3>
+              <h3>“장애를 넘어, 가족을 만나다”</h3>
               <p>
                 두 눈이 없는 상태로 구조된 럭키,<br />
-                지금은 해외에서 자신을 온전히 사랑해주는 가족과 <br />
+                지금은 해외에서 자신을 온전히 사랑해주는 가족과<br />
                 함께 살아가고 있습니다.
               </p>
-
               <p>럭키에게 입양은 세상을 다시 만나는 기회가 되었습니다.</p>
             </div>
           </div>
 
-          <div class="story-pagination">
-            <span class="dot active"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
+          <div class="story-slide">
+            <div class="story-img-wrap">
+              <img
+                src="./assets/images/story2.jpg"
+                alt="간이 입양 이야기"
+                class="story-img"
+              />
+            </div>
+
+            <div class="story-text">
+              <h3>“혼자였던 하루, 함께하는 일상으로”</h3>
+              <p>
+                차가운 길 위에서 발견된 간이는 경계심이 매우 많았습니다.<br />
+                이제는 따뜻한 집에서 이름을 부르면 달려오는 사랑스러운<br />
+                반려견이 되었습니다.
+              </p>
+              <p>칸이에게 집은 이제 가장 안전한 곳이 되었습니다.</p>
+            </div>
           </div>
+
+          <div class="story-slide">
+            <div class="story-img-wrap">
+              <img
+                src="./assets/images/story3.jpg"
+                alt="배추 입양 이야기"
+                class="story-img"
+              />
+            </div>
+
+            <div class="story-text">
+              <h3>“숨던 아이가 먼저 다가오기까지”</h3>
+              <p>
+                낯선 사람만 보면 숨기 바빴던 배추,<br />
+                이제는 가족 무릎 위에서 잠드는 것을 가장 좋아합니다.
+              </p>
+              <p>배추는 사랑받는 법을 천천히 배워가는 중입니다.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="story-dots">
+          <button
+            class="story-dot active"
+            type="button"
+            aria-label="1번 슬라이드"
+          ></button>
+          <button
+            class="story-dot"
+            type="button"
+            aria-label="2번 슬라이드"
+          ></button>
+          <button
+            class="story-dot"
+            type="button"
+            aria-label="3번 슬라이드"
+          ></button>
         </div>
       </section>
 
       <section class="activity">
-        <div class="activity-inner">
-          <!-- 타이틀 -->
+        <div class="inner">
           <div class="activity-title">
             <h2>협회 주요활동</h2>
             <p>유기동물의 구조부터 평생 가족을 만나는 순간까지 함께합니다.</p>
           </div>
 
-          <!-- 원형 카드 -->
           <div class="activity-circles">
             <div class="circle">
               <img src="./assets/icons/icon-1.png" alt="" />
@@ -221,7 +291,6 @@
             </div>
           </div>
 
-          <!-- 설명 -->
           <div class="activity-list">
             <div class="activity-item">
               <div class="number">1</div>
@@ -255,7 +324,6 @@
       </section>
     </div>
 
-    <!-- 슬로건 -->
     <section class="slogan">
       <img src="./assets/images/dog8.jpg" alt="" class="slogan-bg" />
 
@@ -273,5 +341,47 @@
         <span class="slogan-number">053-4364-3120</span>
       </div>
     </section>
+
+    <section class="contact-section">
+      <div class="contact-inner">
+        <div class="contact-map">
+          <img src="./assets/images/map.jpg" alt="오시는 길 지도" />
+        </div>
+
+        <div class="contact-form-wrap">
+          <h2>Contact Form</h2>
+
+          <form class="contact-form">
+            <input type="text" placeholder="이름" />
+            <input type="text" placeholder="연락처" />
+            <input type="text" placeholder="이메일" />
+            <textarea placeholder="문의사항"></textarea>
+
+            <label class="agree-check">
+              <input type="checkbox" />
+              <span>약관동의</span>
+            </label>
+
+            <button type="submit">문의하기</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <h2 class="footer-logo">animalwa.org</h2>
+
+        <div class="footer-info">
+          <p>상호명 : 한국유기동물복지협회</p>
+          <p>대표자명 : 임창춘</p>
+          <p>사업장 주소 : 파주시 광탄면 혜음로 354</p>
+          <p>대표 전화 : 010-8987-2820</p>
+          <p>고유번호 : 310-82-06929</p>
+        </div>
+
+        <p class="footer-copy">Copyright 2019-2025 @ 한국유기동물복지협회</p>
+      </div>
+    </footer>
   </body>
 </html>
